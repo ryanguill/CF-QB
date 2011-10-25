@@ -1,25 +1,3 @@
-<!--- 
-===========================================================
-Title: 			
-FileName: 		
-Version:		
-Author:			
-CreatedOn:		
-LastModified:	
-
-Purpose:
-
-Dependancies:
-
-Assumptions:
-
-Outline:
-
-
-ChangeLog:
-
-===========================================================
- --->
 <cfsilent>
 	<cfparam name="url.user" default="all" />
 	<cfset variables.sqlText = application.histHandler.getSQLForUser("all") />	

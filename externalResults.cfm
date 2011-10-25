@@ -80,7 +80,7 @@
 							<tr>
 								<th>
 									<!--- The record number --->
-									#NumberFormat(variables.k,"0000")#
+									#NumberFormat(variables.k,repeatString("0",len(variables.q.recordcount)))#
 								</th>
 								
 								<!--- for each record, loop over the columns and dynamically get the value out... --->

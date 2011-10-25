@@ -67,7 +67,7 @@
 	<cfloop from="1" to="#variables.q.recordCount#" index="k">
 	
 		<!--- The record number --->
-		<cfset variables.out = variables.quot & NumberFormat(k,"0000") & variables.delim />
+		<cfset variables.out = variables.quot & NumberFormat(k,repeatString("0",len(variables.q.recordcount))) & variables.delim />
 		
 		<!--- now loop over the column names... --->
 		<cfloop from="1" to="#arrayLen(variables.arResultsHeaders)#" index="j">

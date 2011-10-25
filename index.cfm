@@ -1,5 +1,4 @@
 <cfprocessingdirective suppresswhitespace="true">
-<cfsetting showdebugoutput="false" />
 <cfsilent>
 <!---
 ===================================
@@ -712,7 +711,9 @@ how we can display the recordset dynamically...
 								<a href="resultsxml.cfm?id=#variables.currentResultID#"><img src="inc/img/xml.gif" border="0" alt="Save Results as XML File" /></a><!--- // xml file --->
 								<a href="resultsWDDX.cfm?id=#variables.currentResultID#">WDDX</a><!--- // wddx file --->
 								<a href="viewArrayCollection.cfm?id=#variables.currentResultID#" target="_blank">ArrayCollection</a><!--- // array collection file --->
-								<a href="resultsJSON.cfm?id=#variables.currentResultID#">JSON</a><!--- // json file --->
+								<cfif application.settings.cfVersion GTE 8>
+									<a href="resultsJSON.cfm?id=#variables.currentResultID#">JSON</a><!--- // json file --->
+								</cfif>
 								<a href="resultsJS.cfm?id=#variables.currentResultID#">JS</a><!--- // JS Variables file --->
 								<a href="resultsHTMLtable.cfm?id=#variables.currentResultID#" target="_blank">HTML Table</a><!--- // HTML Table--->
 								|

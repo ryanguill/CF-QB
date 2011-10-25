@@ -15,10 +15,10 @@ any other settings.
 		clientmanagement="false" />
 
 	<!---
-	===================================
-	Read the cgi Auth Username, Abort
-	if not allowed.
-	===================================
+	=====================================================
+	Read the cgi Auth Username, Abort if not allowed.
+	This only applies if you are using NT Authentication.
+	=====================================================
 	 --->
 	<!--- <cfset variables.authUser = uCase(ListLast(cgi.REMOTE_USER, '\')) /> --->
 	<cfset variables.authUser = "" />
@@ -58,8 +58,12 @@ any other settings.
 				<cfset application.settings.cfVersion = "5" />
 			<cfelseif ListGetAt(application.settings.cfVersionFull,1) LT 7>
 				<cfset application.settings.cfVersion = "6.1" />
-			<cfelse>
+			<cfelseif ListGetAt(application.settings.cfVersionFull,1) LT 8>
 				<cfset application.settings.cfVersion = "7" />
+			<cfelseif ListGetAt(application.settings.cfVersionFull,1) LT 9>
+				<cfset application.settings.cfVersion = "8" />
+			<cfelse>
+				<cfset application.settings.cfVersion = "9" />
 			</cfif>
 		</cfif>
 
@@ -349,3 +353,4 @@ any other settings.
 	=================================
 	 --->
 </cfsilent>
+<cfsetting showdebugoutput="false" />
