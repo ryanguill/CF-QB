@@ -1,0 +1,118 @@
+body {
+	background-color:#fff;
+	padding:0;
+	margin:0;
+	}
+
+.error {
+	background-color:#CC3300;
+	color:#FFFFFF; 
+	padding:5px; 
+	margin: 5px; 
+	font-weight:bolder;
+	}
+
+pre {
+	margin: 2px 0 0 0;
+	padding: 1px;
+	
+	max-width:900px;
+	width:900px;
+	}
+h3 {
+	margin: 2px 0;
+	padding: 0;
+	font-size: 18px;
+	}
+
+/*.welcomeBar {
+	background-image:url(../img/bg-grad.gif);
+	background-repeat:repeat-x;
+	}
+*/
+
+.inputStyle {
+	background-image:url(../img/bg-grad.gif);
+	background-repeat:repeat-x;
+	}
+
+.keyword {
+	font-weight:bold;
+	color:blue;
+	}
+.paren {
+	font-weight:bold;
+	color:#FF0000;
+	}
+.comnt {
+	font-weight:bold;
+	color:#666666;
+	background-color:#FFFF66;
+	}
+.custFunct {
+	font-weight:bold;
+	color:#00CC00;
+	}
+.aggFunct {
+	font-weight:bold;
+	color:#FF00FF;
+	}
+.dataManip {
+	font-weight:bold;
+	color:#0099CC;
+	}	
+
+.histPre {
+	margin:0;
+	padding:0;
+	
+	max-width:700px;
+	width:700px;
+	}
+td {
+	margin:0;
+	padding:0;
+	border: 1px solid #ccc;
+	}
+
+th {
+	padding: 3px;
+}
+
+dl {
+	font-family:"Courier New", Courier, mono;
+	}
+dt {
+	font-weight:bold;
+	
+	}
+dd {
+	padding-bottom:5px;
+	border-bottom: 1px dashed #ccc;
+	margin:3px 20px;
+	}
+	
+.fixed {
+	font-family:"Courier New", Courier, mono;
+	}
+	
+.sortable {
+	font-size:smaller;
+	padding: 5px;
+}
+
+.noPadd
+{
+	padding:0;
+	margin:0;
+}
+
+code
+{
+	font-weight:bold;
+}
+
+
+
+
+
